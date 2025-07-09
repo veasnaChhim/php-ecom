@@ -1,0 +1,298 @@
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: #1a1919;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Buttons */
+.btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+    .btn:hover {
+        background-color: #0351a0;
+    }
+
+/* Inputs and Forms */
+input, select, textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: #0c0b0b;
+}
+
+/* Product Card Styling */
+.product {
+    background-color: #000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 240px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+    .product:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        color: #222;
+        margin: 10px 0 5px;
+    }
+
+    .product p {
+        color: #222;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+/* Product Grid */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Add to Cart Button */
+.add-btn {
+    background-color: #0066cc !important;
+    color: white !important;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+    background-color: #004d99 !important;
+    transform: scale(1.03);
+}
+
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+    form label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #b1acac;
+    }
+
+    form .btn {
+        background-color: #0066cc;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        form .btn:hover {
+            background-color: #004d99;
+        }
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #01053d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+    .navbar a {
+        margin-right: 20px;
+        color: #68035a;
+        font-weight: 500;
+    }
+
+        .navbar a:hover {
+            color: #032e58;
+        }
+
+    .navbar img {
+        height: 40px;
+        margin-right: 15px;
+    }
+
+/* Place Order Button */
+.place-order-btn {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .place-order-btn:hover {
+        background-color: #004d99;
+        transform: scale(1.03);
+    }
+
+    .place-order-btn:active {
+        transform: scale(0.98);
+    }
+
+/* Cart Container */
+.cart-container {
+    padding: 40px 20px;
+    background-color: #a4a4a5;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    table thead {
+        background-color: #0066cc;
+        color: #fff;
+    }
+
+    table th, table td {
+        padding: 16px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    table input[type="number"] {
+        width: 60px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+/* Total and Buttons */
+.total {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    color: #444;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+/* Empty Cart Message */
+.empty-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+    color: #d6d2d2;
+}
+.slider {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 400%; /* 4 images, adjust if more */
+    animation: slideAnimation 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+        
